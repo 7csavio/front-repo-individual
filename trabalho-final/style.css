@@ -15,15 +15,20 @@ html {
 
 .logosite {
     display: flex;
+    flex-direction: columns;
     width: 4rem;
     height: 5rem;
-    text-align: left;
+    /*text-align:justify;*/
+    justify-content:flex-end;
 }
 
 body {
     background-color: #003249;
     color: white;
     line-height: 1.6;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -59,14 +64,20 @@ nav a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 200px;
+    gap: 10px;
     margin-top: 2rem;
 
 }
-
-.site-card1 {
+.image-card{
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 0, 5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.site-card{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: #80CED7;
     border-radius: 8px;
     padding: 1rem;
@@ -75,122 +86,12 @@ nav a {
     margin-bottom: 20px;
     max-width: 350px;
     text-align: center;
-
     color: #003249;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
-
-.site-card1 img {
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 0, 5rem;
+.site-card:nth-child(even){
+    background-color: #007EA7
 }
-
-.site-card2 {
-    display: flex;
-    flex-direction: column;
-    background-color: #007EA7;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 65%;
-    gap: 20px;
-    margin-bottom: 20px;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    color: #003249;
-}
-
-.site-card2 img {
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 0, 5rem;
-}
-
-.site-card3 {
-    display: flex;
-    flex-direction: column;
-    background-color: #80CED7;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 65%;
-    gap: 20px;
-    margin-bottom: 20px;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    color: #003249;
-}
-
-.site-card3 img {
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 0, 5rem;
-}
-
-.site-card4 {
-    display: flex;
-    flex-direction: column;
-    background-color: #007EA7;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 65%;
-    gap: 20px;
-    margin-bottom: 20px;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    color: #003249;
-}
-
-.site-card4 img {
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 0, 5rem;
-}
-
-.site-card5 {
-    display: flex;
-    flex-direction: column;
-    background-color: #80CED7;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 65%;
-    gap: 20px;
-    margin-bottom: 20px;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    color: #003249;
-}
-
-.site-card5 img {
-    max-width: 100%;
-    padding: 0, 5rem;
-    border-radius: 8px;
-}
-
-.site-card6 {
-    display: flex;
-    flex-direction: column;
-    background-color: #007EA7;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 65%;
-    gap: 20px;
-    margin-bottom: 20px;
-    max-width: 350px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    color: #003249;
-}
-
-.site-card6 img {
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 0, 5rem;
-}
-
 .about-developer {
     background-color: #007EA7;
     width: 50%;
